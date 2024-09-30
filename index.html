@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Insuficiência Cardíaca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Diagnóstico de Insuficiência Cardíaca</h1>
+        <form action="/diagnostico" method="post">
+            <div class="form-group">
+                <label><input type="checkbox" name="dispneia_paroxistica_noturna"> Dispneia paroxística noturna</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="turgencia_jugular"> Turgência jugular</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="cardiomegalia"> Cardiomegalia à radiografia de tórax</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="edema_agudo_pulmao"> Edema agudo de pulmão</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="terceira_bulha"> Terceira bulha (galope)</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="pressao_venosa"> Aumento da pressão venosa central (> 16 cm H2O no átrio direito)</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="refluxo_hepatojugular"> Refluxo hepatojugular</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="perda_peso"> Perda de peso > 4,5 kg em 5 dias em resposta ao tratamento</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="edema_tornozelos"> Edema de tornozelos bilateral</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="tosse_noturna"> Tosse noturna</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="dispneia_esforcos"> Dispneia a esforços ordinários</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="hepatomegalia"> Hepatomegalia</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="derrame_pleural"> Derrame pleural</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="capacidade_funcional"> Diminuição da capacidade funcional em um terço da máxima registrada previamente</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="taquicardia"> Taquicardia (FC > 120 bpm)</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Verificar Insuficiência Cardíaca</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
